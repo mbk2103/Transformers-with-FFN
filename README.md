@@ -19,6 +19,7 @@ To train the Vision Transformer model, run the `main()` function in `main.py`. T
 
 ```bash
 python main.py
+```
 
 To perform inference on a single image, uncomment and modify the example code in the main() function.
 
@@ -57,6 +58,7 @@ matplotlib
 Install dependencies using:
 ```bash
 pip install torch torchvision Pillow scikit-learn seaborn matplotlib
+```
 
 Feel free to explore and modify the project to suit your needs!
 
