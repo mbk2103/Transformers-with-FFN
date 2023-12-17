@@ -25,15 +25,15 @@ To perform inference on a single image, uncomment and modify the example code in
 
 ## Model Configuration
 
-Input Dimension: 28x28
-Number of Classes: 10
-Number of Blocks: 4
-Hidden Dimension: 256
-FFN Hidden Dimension: 512
-Dropout Probability: 0.1
-Batch Size: 128
-Learning Rate: 0.0001
-Number of Epochs: 10
+- Input Dimension: 28x28
+- Number of Classes: 10
+- Number of Blocks: 4
+- Hidden Dimension: 256
+- FFN Hidden Dimension: 512
+- Dropout Probability: 0.1
+- Batch Size: 128
+- Learning Rate: 0.0001
+- Number of Epochs: 10
 
 ### Data Loading
 The project uses the MNIST dataset. Data loading configurations can be found in the VisionTransformerFactory class.
@@ -48,12 +48,12 @@ To perform inference on a single image, use the example code in the main() funct
 The project includes visualization tools for monitoring the model's performance. Confusion matrices are saved to the path/to/project directory.
 
 ## Dependencies
-PyTorch
-torchvision
-Pillow
-scikit-learn
-seaborn
-matplotlib
+- PyTorch
+- torchvision
+- Pillow
+- scikit-learn
+- seaborn
+- matplotlib
 
 Install dependencies using:
 ```bash
