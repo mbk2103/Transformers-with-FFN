@@ -67,15 +67,15 @@ def main():
   train(model, train_loader, val_loader, criterion, optimizer, device, num_epochs)
 
   # Save the trained model
-  torch.save(model.state_dict(), '/content/drive/MyDrive/NetworksFromScratch/Transformer-withFFN-from-Scratch/vision_transformer_model.pth')
+  torch.save(model.state_dict(), '/output/path/to/here/vision_transformer_model.pth')
 
   # Load the trained model for inference
-  model.load_state_dict(torch.load('/content/drive/MyDrive/NetworksFromScratch/Transformer-withFFN-from-Scratch/vision_transformer_model.pth'))
+  model.load_state_dict(torch.load('/output/path/to/here/vision_transformer_model.pth'))
   model.eval()
 
   # Example: Inference on a single image
 #   example_transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-#   example_image = example_transform(Image.open('/content/drive/MyDrive/NetworksFromScratch/Inputs/mnist5.jpg')).unsqueeze(0).to(device)
+#   example_image = example_transform(Image.open('/input/image/path/to/here/mnist5.jpg')).unsqueeze(0).to(device)
 #   with torch.no_grad():
 #       output = model(example_image.view(example_image.size(0), -1))  # Flatten the input tensor for inference
 #   predicted_class = torch.argmax(output, dim=1).item()
