@@ -10,7 +10,7 @@ class VisionTransformerFactory:
   @staticmethod
   def create_dataloader(batch_size=128):
     transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5, ), (0.5, ))])
-    dataset = datasets.MNIST(root="/content/drive/MyDrive/NetworksFromScratch/MNIST/", train=True, transform = transform, download = True)
+    dataset = datasets.MNIST(root="path/to/here", train=True, transform = transform, download = True)
     train_size = int(0.8*len(dataset))
     val_size = len(dataset) - train_size
     train_dataset, val_dataset = random_split(dataset, [train_size, val_size])
